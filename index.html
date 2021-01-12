@@ -10,11 +10,14 @@
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
-    <a-assets>
-      <a-asset-item id="scene" src="./assets/articuno/scene.gltf"></a-asset-item>
-    </a-assets>
-    <!-- use your gltf model -->
-    <a-marker preset=’hiro’></a-marker>
-    <a-entity camera></a-entity>
+    <a-marker preset=’hiro’>
+       
+        <a-assets>
+        <a-asset-item id="scene" src="./assets/articuno/scene.gltf"></a-asset-item>
+        </a-assets>
+        
+    </a-marker>
+  <a-entity camera>
+  </a-entity>
   </a-scene>
 </body>
